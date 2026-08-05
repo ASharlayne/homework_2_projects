@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-wrapper">
+
+    <!-- Shared Navigation -->
+    <header class="site-header">
+        <nav class="header-nav" aria-label="Primary navigation">
+            <span class="header-brand">Developer Portfolio</span>
+            <div class="header-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About & Contact</a>
+                <a href="combined.html">Combined</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-main">
+        <h1>My Projects</h1>
+        
+        <!-- Project Filters -->
+        <section class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cli-tools">CLI Tools</button>
+            <button class="filter-btn" data-filter="frameworks">Frameworks</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid">
+            
+            <article class="project-card" data-category="cli-tools">
+                <h3>Build Optimizer CLI</h3>
+                <p>A command-line tool for optimizing and analyzing project builds. Provides insights into build performance and bottlenecks.</p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">CLI</span>
+                    <span class="tag">Performance</span>
+                </div>
+                <div class="category-badge">CLI Tool</div>
+                <a href="project-detail.html?project=build-optimizer" class="view-details">View Details →</a>
+            </article>
+
+            <article class="project-card" data-category="frameworks">
+                <h3>React UI Framework</h3>
+                <p>A comprehensive component library built on React for rapid UI development. Includes documentation and examples.</p>
+                <div class="tech-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Components</span>
+                </div>
+                <div class="category-badge">Framework</div>
+                <a href="project-detail.html?project=react-ui" class="view-details">View Details →</a>
+            </article>
+
+            <article class="project-card" data-category="cli-tools">
+                <h3>Deployment Assistant</h3>
+                <p>CLI tool that automates deployment workflows. Supports multiple cloud providers and custom configurations.</p>
+                <div class="tech-tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">DevOps</span>
+                    <span class="tag">Automation</span>
+                </div>
+                <div class="category-badge">CLI Tool</div>
+                <a href="project-detail.html?project=deploy-assistant" class="view-details">View Details →</a>
+            </article>
+
+            <article class="project-card" data-category="frameworks">
+                <h3>Python Data Framework</h3>
+                <p>Lightweight framework for data processing and analysis pipelines. Built for speed and simplicity.</p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Data</span>
+                    <span class="tag">Framework</span>
+                </div>
+                <div class="category-badge">Framework</div>
+                <a href="project-detail.html?project=data-framework" class="view-details">View Details →</a>
+            </article>
+
+            <article class="project-card" data-category="other">
+                <h3>Real-time Chat Application</h3>
+                <p>Full-stack web application with real-time messaging using WebSockets. Includes user authentication and rooms.</p>
+                <div class="tech-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">WebSocket</span>
+                    <span class="tag">Database</span>
+                </div>
+                <div class="category-badge">Other</div>
+                <a href="project-detail.html?project=chat-app" class="view-details">View Details →</a>
+            </article>
+
+            <article class="project-card" data-category="cli-tools">
+                <h3>Code Analyzer Tool</h3>
+                <p>Analyzes codebases to identify patterns, complexity metrics, and potential improvements.</p>
+                <div class="tech-tags">
+                    <span class="tag">Rust</span>
+                    <span class="tag">CLI</span>
+                    <span class="tag">Analysis</span>
+                </div>
+                <div class="category-badge">CLI Tool</div>
+                <a href="project-detail.html?project=code-analyzer" class="view-details">View Details →</a>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer Element -->
+    <footer class="site-footer">
+        <p>&copy; 2026 My Portfolio Site</p>
+        <div class="footer-links">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

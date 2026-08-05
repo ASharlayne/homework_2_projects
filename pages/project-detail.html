@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-wrapper">
+
+    <!-- Shared Navigation -->
+    <header class="site-header">
+        <nav class="header-nav" aria-label="Primary navigation">
+            <span class="header-brand">Developer Portfolio</span>
+            <div class="header-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About & Contact</a>
+                <a href="combined.html">Combined</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-main">
+        <!-- Back Button -->
+        <nav class="breadcrumb">
+            <a href="projects.html">← Back to Projects</a>
+        </nav>
+
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="project-header">
+                <h1>Build Optimizer CLI</h1>
+                <div class="project-metadata">
+                    <span class="category-badge">CLI Tool</span>
+                    <span class="status-badge">Active</span>
+                    <span class="year">2024</span>
+                </div>
+            </div>
+            <p class="project-tagline">A command-line tool for optimizing and analyzing project builds.</p>
+        </section>
+
+        <!-- Problem Statement -->
+        <section class="problem-statement">
+            <h2>The Problem</h2>
+            <p>Building large projects can be slow and hard to debug. Developers often don't know which dependencies or modules are causing build delays, making optimization guesswork.</p>
+            <p>This tool was created to provide clear visibility into the build process and actionable insights for improvement.</p>
+        </section>
+
+        <!-- Solution & Features -->
+        <section class="solution-section">
+            <h2>The Solution</h2>
+            <p>Build Optimizer CLI analyzes your project's build process in real-time and provides detailed metrics about:</p>
+            <ul>
+                <li>Module compilation times</li>
+                <li>Dependency relationships and circular dependencies</li>
+                <li>Bottleneck identification</li>
+                <li>Optimization recommendations</li>
+                <li>Performance comparisons over time</li>
+            </ul>
+        </section>
+
+        <!-- Visual Content / Screenshots -->
+        <section class="visual-content">
+            <h2>Screenshots & Demo</h2>
+            <div class="screenshot-placeholder">
+                <p>[Screenshot 1: CLI Output Example]</p>
+                <p>Shows real-time build analysis with color-coded metrics</p>
+            </div>
+            <div class="screenshot-placeholder">
+                <p>[Screenshot 2: Performance Graph]</p>
+                <p>Visualizes build time trends and improvements</p>
+            </div>
+            <div class="code-snippet">
+                <h3>Usage Example</h3>
+                <pre><code>$ build-optimizer analyze ./src
+Analyzing project structure...
+✓ Found 234 modules
+✓ Detected 1,200 dependencies
+✓ Processing complete
+
+Build Metrics:
+- Total compile time: 45.2s
+- Longest module: auth.service.ts (3.2s)
+- Circular dependencies: 0
+- Cache hit rate: 87%
+
+Recommendations:
+→ Consider lazy-loading charts module (saves ~2.1s)
+→ Preload critical assets in parallel</code></pre>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-section">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack-list">
+                <div class="tech-item">
+                    <strong>Language:</strong> Python 3.9+
+                </div>
+                <div class="tech-item">
+                    <strong>Core Libraries:</strong> Click (CLI), Graphlib (dependency analysis), Pydantic (validation)
+                </div>
+                <div class="tech-item">
+                    <strong>Data Processing:</strong> Pandas, NumPy
+                </div>
+                <div class="tech-item">
+                    <strong>Visualization:</strong> Matplotlib, Plotly
+                </div>
+                <div class="tech-item">
+                    <strong>Testing:</strong> pytest, pytest-cov
+                </div>
+                <div class="tech-item">
+                    <strong>Build & Distribution:</strong> setuptools, poetry
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Links -->
+        <section class="project-links">
+            <h2>Links & Resources</h2>
+            <div class="link-group">
+                <a href="https://github.com/username/build-optimizer" target="_blank" class="project-link">
+                    <strong>GitHub Repository</strong> - Source code and contribution guidelines
+                </a>
+            </div>
+            <div class="link-group">
+                <a href="https://build-optimizer-docs.example.com" target="_blank" class="project-link">
+                    <strong>Documentation</strong> - Complete guide and API reference
+                </a>
+            </div>
+            <div class="link-group">
+                <a href="https://pypi.org/project/build-optimizer" target="_blank" class="project-link">
+                    <strong>PyPI Package</strong> - Install via pip
+                </a>
+            </div>
+            <div class="link-group">
+                <a href="https://demo.build-optimizer.example.com" target="_blank" class="project-link">
+                    <strong>Live Demo</strong> - Try it online
+                </a>
+            </div>
+        </section>
+
+        <!-- Related Projects -->
+        <section class="related-projects">
+            <h2>Related Projects</h2>
+            
+            <article class="related-project-card">
+                <h3>Code Analyzer Tool</h3>
+                <p>Analyzes codebases for complexity and patterns.</p>
+                <div class="tech-tags">
+                    <span class="tag">Rust</span>
+                    <span class="tag">CLI</span>
+                </div>
+                <a href="project-detail.html?project=code-analyzer" class="view-details">View Details →</a>
+            </article>
+
+            <article class="related-project-card">
+                <h3>Deployment Assistant</h3>
+                <p>Automates deployment workflows across cloud providers.</p>
+                <div class="tech-tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">DevOps</span>
+                </div>
+                <a href="project-detail.html?project=deploy-assistant" class="view-details">View Details →</a>
+            </article>
+
+            <article class="related-project-card">
+                <h3>Python Data Framework</h3>
+                <p>Framework for data processing pipelines.</p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Data</span>
+                </div>
+                <a href="project-detail.html?project=data-framework" class="view-details">View Details →</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Element -->
+    <footer class="site-footer">
+        <p>&copy; 2026 My Portfolio Site</p>
+        <div class="footer-links">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
