@@ -203,3 +203,27 @@ Home → Projects → Project Detail
 - Simple access to GitHub repositories
 - Professional impression
 - Mobile responsiveness
+
+---
+
+## Accessibility, Contrast, and Visual Design Updates
+
+### WAVE fixes
+- Added current-page indicators to the main navigation so assistive technology can identify the active page.
+- Converted the site brand from plain text to a descriptive home link for consistent keyboard navigation.
+- Added `rel="noopener noreferrer"` to links that open in a new tab to prevent unsafe target-window behavior.
+- Added an accessible contact form with explicit labels, grouped radio controls, fieldset/legend structure, live status messaging, and programmatic error states.
+- Corrected page script paths so form validation behavior loads on nested pages.
+
+### Contrast checks
+- Verified the shared dark palette uses light text on dark surfaces and passes WCAG AA contrast for normal text.
+- Updated badge and filter text to use the primary text color for stronger WCAG AA contrast on tinted backgrounds.
+- Error text uses a light red on the dark background to keep validation feedback readable.
+
+### Gestalt principles
+- I used proximity by grouping related project titles, descriptions, tags, badges, and action links inside individual cards.
+- I used similarity by repeating the same card, tag, button, navigation, and footer styling across all pages.
+- I used common region by enclosing each form field and error message in a clear visual group.
+
+### Assignment repository URL
+- GitHub repository: [https://github.com/ASharlayne/homework_2_projects](https://github.com/ASharlayne/homework_2_projects)
