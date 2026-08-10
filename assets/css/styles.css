@@ -367,6 +367,7 @@ margin: var(--space-1) 0 0;
     border: 1px solid rgba(115, 132, 145, 0.12);
 }
 
+.project-card h2,
 .project-card h3,
 .related-project-card h3,
 .skill-category h3,
@@ -828,4 +829,106 @@ input:focus, textarea:focus, select:focus {
     .hero {
         padding: var(--space-6);
     }
+}
+
+/* Contact form and accessibility refinements */
+.header-brand:focus-visible,
+.header-links a:focus-visible,
+.footer-links a:focus-visible,
+.cta-button:focus-visible,
+.view-details:focus-visible,
+.view-all:focus-visible,
+.filter-btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent-strong);
+    outline-offset: 3px;
+}
+
+.header-links a[aria-current="page"] {
+    color: var(--accent-strong);
+    border-bottom: 2px solid var(--accent-strong);
+}
+
+.tag,
+.skill-tag,
+.category-badge,
+.status-badge,
+.year,
+.filter-btn {
+    color: var(--text);
+}
+
+.contact-form {
+    margin-top: var(--space-4);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--border);
+}
+
+.contact-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.contact-form legend {
+    margin-bottom: var(--space-2);
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.form-field,
+.contact-method-group {
+    display: grid;
+    gap: var(--space-1);
+    margin-bottom: var(--space-3);
+}
+
+.form-field label,
+.radio-options label,
+.contact-method-group legend {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.radio-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.radio-options div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.error-message {
+    display: none;
+    margin: 0;
+    color: #ffb4ab;
+    font-weight: 600;
+}
+
+.form-field.has-error input,
+.form-field.has-error textarea,
+.contact-method-group.has-error {
+    border-color: #ffb4ab;
+}
+
+.form-field.has-error input,
+.form-field.has-error textarea {
+    box-shadow: 0 0 0 3px rgba(255, 180, 171, 0.18);
+}
+
+.has-error .error-message {
+    display: block;
+}
+
+.form-status {
+    margin: var(--space-2) 0 0;
+    color: var(--success);
+    font-weight: 700;
 }
