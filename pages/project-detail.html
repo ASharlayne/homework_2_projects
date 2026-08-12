@@ -5,22 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details - My Portfolio</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/site-chrome.js"></script>
 </head>
 <body>
     <div class="site-wrapper">
 
     <!-- Shared Navigation -->
-    <header class="site-header">
-        <nav class="header-nav" aria-label="Primary navigation">
-            <span class="header-brand">Developer Portfolio</span>
-            <div class="header-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About & Contact</a>
-                <a href="combined.html">Combined</a>
-            </div>
-        </nav>
-    </header>
+    <site-header root="../" current="projects"></site-header>
 
     <!-- Page Content -->
     <main class="page-main">
@@ -180,15 +171,7 @@ Recommendations:
     </main>
 
     <!-- Footer Element -->
-    <footer class="site-footer">
-        <p>&copy; 2026 My Portfolio Site</p>
-        <div class="footer-links">
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-        </div>
-    </footer>
+    <site-footer></site-footer>
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>

@@ -7,7 +7,9 @@
     --bg: #0d1117;
     --surface: #161b22;
     --surface-strong: #21262d;
+    --surface-soft: rgba(255, 255, 255, 0.03);
     --border: #30363d;
+    --border-soft: rgba(115, 132, 145, 0.12);
     --accent: #58a6ff;
     --accent-strong: #79c0ff;
     --text: #c9d1d9;
@@ -69,6 +71,13 @@ button {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--space-3) var(--space-6);
+}
+
+/* Shared chrome custom elements are transparent wrappers so the header can
+   stay sticky relative to the page. */
+site-header,
+site-footer {
+    display: contents;
 }
 
 .site-header,
@@ -246,13 +255,6 @@ button {
     }
 }
 
-.comparison-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(115, 132, 145, 0.12);
-    border-radius: 18px;
-    padding: 24px;
-}
-
 .comparison-card h3 {
     margin-top: 0;
     color: var(--accent);
@@ -273,8 +275,8 @@ button {
 }
 
 .preview-panel {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(115, 132, 145, 0.12);
+    background: var(--surface-soft);
+    border: 1px solid var(--border-soft);
     border-radius: var(--radius-md);
     overflow: hidden;
     display: grid;
@@ -287,7 +289,7 @@ button {
     align-items: flex-start;
     gap: var(--space-2);
     padding: var(--space-2) var(--space-3);
-    border-bottom: 1px solid rgba(115, 132, 145, 0.12);
+    border-bottom: 1px solid var(--border-soft);
 }
 
 .panel-heading h3 {
@@ -337,6 +339,7 @@ margin: var(--space-1) 0 0;
     color: var(--text);
 }
 
+.comparison-card,
 .project-card,
 .related-project-card,
 .skill-category,
@@ -354,6 +357,7 @@ margin: var(--space-1) 0 0;
     padding: 24px;
 }
 
+.comparison-card,
 .project-card,
 .related-project-card,
 .skill-category,
@@ -363,8 +367,8 @@ margin: var(--space-1) 0 0;
 .project-links .link-group,
 .tech-stack-item {
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(115, 132, 145, 0.12);
+    background: var(--surface-soft);
+    border: 1px solid var(--border-soft);
 }
 
 .project-card h2,
@@ -410,7 +414,7 @@ margin: var(--space-1) 0 0;
     padding: var(--space-1) var(--space-2);
     border-radius: 999px;
     background: rgba(88, 166, 255, 0.12);
-    color: var(--muted);
+    color: var(--text);
     font-size: 0.85rem;
 }
 
@@ -546,7 +550,7 @@ margin: var(--space-1) 0 0;
 
 .code-snippet {
     background: #010409;
-    border: 1px solid rgba(115, 132, 145, 0.12);
+    border: 1px solid var(--border-soft);
     overflow-x: auto;
 }
 
@@ -711,6 +715,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Small utility classes */
+.wf-note { font-size: 0.85em; }
 .text-muted { color: var(--muted); }
 .text-center { text-align: center; }
 .mb-1 { margin-bottom: var(--space-1); }
@@ -848,15 +853,6 @@ textarea:focus-visible {
 .header-links a[aria-current="page"] {
     color: var(--accent-strong);
     border-bottom: 2px solid var(--accent-strong);
-}
-
-.tag,
-.skill-tag,
-.category-badge,
-.status-badge,
-.year,
-.filter-btn {
-    color: var(--text);
 }
 
 .contact-form {
