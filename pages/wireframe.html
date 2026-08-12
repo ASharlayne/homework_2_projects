@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Development Portfolio Wireframes</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -202,13 +204,13 @@
         <footer class="site-footer">
             <p>&copy; 2026 My Portfolio Site</p>
             <div class="footer-links">
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
             </div>
         </footer>
     </main>
     </div>
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>
