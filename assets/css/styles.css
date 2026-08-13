@@ -932,7 +932,3 @@ textarea:focus-visible {
     color: var(--success);
     font-weight: 700;
 }
-
-.form-status.is-error {
-    color: #ffb4ab;
-}
