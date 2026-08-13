@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development Portfolio Wireframes</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/site-chrome.js"></script>
 </head>
 <body>
     <div class="site-wrapper">
-        <header class="site-header" aria-label="Primary navigation">
-            <nav class="header-nav">
-                <span class="header-brand">Developer Portfolio</span>
-                <div class="header-links">
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="about.html">About & Contact</a>
-                    <a href="combined.html">Combined</a>
-                </div>
-            </nav>
-        </header>
+        <site-header root="../" current="wireframe"></site-header>
         <main class="page-main">
         <h1>📱 Development Portfolio Wireframes</h1>
         
@@ -31,7 +22,7 @@
                 
                 <div class="wf-section wf-hero">
                     HERO SECTION<br>
-                    <span style="font-size: 0.8em;">Title + Tagline + CTA Button</span>
+                    <span class="wf-note">Title + Tagline + CTA Button</span>
                 </div>
                 
                 <div class="wf-section wf-main">FEATURED PROJECTS (2-3)</div>
@@ -103,22 +94,22 @@
                 
                 <div class="wf-section">
                     ABOUT SECTION<br>
-                    <span style="font-size: 0.85em;">Bio + Background + Motivation</span>
+                    <span class="wf-note">Bio + Background + Motivation</span>
                 </div>
                 
                 <div class="wf-section">
                     SKILLS & TECH STACK<br>
-                    <span style="font-size: 0.85em;">Languages | Frameworks | Tools | Databases</span>
+                    <span class="wf-note">Languages | Frameworks | Tools | Databases</span>
                 </div>
                 
                 <div class="wf-section">
                     EXPERIENCE TIMELINE<br>
-                    <span style="font-size: 0.85em;">(Optional) Key Milestones</span>
+                    <span class="wf-note">(Optional) Key Milestones</span>
                 </div>
                 
                 <div class="wf-section">
                     CONTACT SECTION<br>
-                    <span style="font-size: 0.85em;">Email | GitHub | LinkedIn | Twitter</span>
+                    <span class="wf-note">Email | GitHub | LinkedIn | Twitter</span>
                 </div>
                 
                 <div class="wf-section wf-footer">FOOTER (Social Links, Copyright)</div>
@@ -130,36 +121,36 @@
                 
                 <div class="wf-section wf-header">NAVIGATION</div>
                 
-                <div class="wf-section" style="font-size: 0.8em;">← Back to Projects</div>
+                <div class="wf-section wf-note">← Back to Projects</div>
                 
                 <div class="wf-section wf-hero">
                     PROJECT TITLE<br>
-                    <span style="font-size: 0.85em;">Category Badge | Status | Year</span>
+                    <span class="wf-note">Category Badge | Status | Year</span>
                 </div>
                 
                 <div class="wf-section">
                     PROBLEM STATEMENT<br>
-                    <span style="font-size: 0.85em;">What problem does it solve?</span>
+                    <span class="wf-note">What problem does it solve?</span>
                 </div>
                 
                 <div class="wf-section">
                     SOLUTION & FEATURES<br>
-                    <span style="font-size: 0.85em;">How it works + Key features</span>
+                    <span class="wf-note">How it works + Key features</span>
                 </div>
                 
                 <div class="wf-section">
                     SCREENSHOTS / DEMO<br>
-                    <span style="font-size: 0.85em;">Visual content</span>
+                    <span class="wf-note">Visual content</span>
                 </div>
                 
                 <div class="wf-section">
                     TECH STACK<br>
-                    <span style="font-size: 0.85em;">Languages, Frameworks, Dependencies</span>
+                    <span class="wf-note">Languages, Frameworks, Dependencies</span>
                 </div>
                 
                 <div class="wf-section">
                     LINKS<br>
-                    <span style="font-size: 0.85em;">GitHub | Live Demo | Docs</span>
+                    <span class="wf-note">GitHub | Live Demo | Docs</span>
                 </div>
                 
                 <div class="wf-section">
@@ -199,16 +190,8 @@
                 <span><strong>Accent Links:</strong> #58a6ff - Links and accents</span>
             </div>
         </div>
-        <footer class="site-footer">
-            <p>&copy; 2026 My Portfolio Site</p>
-            <div class="footer-links">
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-            </div>
-        </footer>
     </main>
+        <site-footer></site-footer>
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>

@@ -225,5 +225,13 @@ Home → Projects → Project Detail
 - I used similarity by repeating the same card, tag, button, navigation, and footer styling across all pages.
 - I used common region by enclosing each form field and error message in a clear visual group.
 
+---
+
+## Shared Utilities
+
+- `assets/js/site-chrome.js` defines the `<site-header>` and `<site-footer>` custom elements. The navigation items, brand, and social links live in one place, so every page shares the same markup. Pages set `root` (relative path back to the site root) and `current` (the active nav item) instead of copying the header and footer.
+- `assets/js/contact-form.js` holds the contact form validation, loaded only by the page that has the form.
+- `assets/css/styles.css` is the single stylesheet. Shared surface colors are exposed as the `--surface-soft` and `--border-soft` tokens, badge/card/button rules are grouped selectors, and repeated inline font sizes on the wireframe page use the `.wf-note` utility class.
+
 ### Assignment repository URL
 - GitHub repository: [https://github.com/ASharlayne/homework_2_projects](https://github.com/ASharlayne/homework_2_projects)
