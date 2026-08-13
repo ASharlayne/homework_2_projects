@@ -213,6 +213,7 @@ Home → Projects → Project Detail
 - Converted the site brand from plain text to a descriptive home link for consistent keyboard navigation.
 - Added `rel="noopener noreferrer"` to links that open in a new tab to prevent unsafe target-window behavior.
 - Added an accessible contact form with explicit labels, grouped radio controls, fieldset/legend structure, live status messaging, and programmatic error states.
+- Added a red error message directly under each form input that names the specific problem (missing value, invalid email format, unselected reply method).
 - Corrected page script paths so form validation behavior loads on nested pages.
 
 ### Contrast checks
