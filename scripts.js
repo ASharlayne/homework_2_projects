@@ -50,7 +50,7 @@ if (contactForm) {
 
     contactForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        const valid = Array.from(controls).every(setFieldState);
+        const valid = Array.from(controls).map(setFieldState).every(Boolean);
 
         if (valid) {
             status.textContent = 'Thanks! Your message is ready to send.';
